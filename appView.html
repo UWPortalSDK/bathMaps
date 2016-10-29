@@ -2,13 +2,25 @@
 <script type="text/ng-template" id="bathMapsMain.html">
     <h3> <b> Closest Bathrooms to You... </b> </h3>
     <widget-list list="item in items track by item.title" render="ready">
+        <div class="container">
         <div class="item item-icon-right item-text-wrap">
             <b ng-bind-html="::item.title"></b>
             <p>
                 <b>Ratings:</b> {{::item.ratings}}
                 <br/>
             </p>
+            <p>
+                <b>Distance:</b> {{::item.distance}}
+                <br/>
+            </p>
+            </div>
+            <div class="item item-icon-right item-text-wrap">
+            <p align="right">
+                <b>Go!</b>
+                <br/>
+            </p>
             <i class="icon ion-chevron-right"></i>
+        </div>
         </div>
     </widget-list>
 </script>
