@@ -1,12 +1,18 @@
 angular.module('portalApp')
 .controller('bathMapsCtrl', ['$scope', function ($scope) {
 	
+    $scope.rating = {
+     	value: '5'   
+    };
+    
+    var val = $scope.portalHelpers.invokeServerFunction('getAvg', {name: 'Bathroom 1'});
+    
 	// mock data
 	$scope.items = [
 		{
 			title:'Bathroom 1',
-			ratings: '3.5',
-            distance: '15'
+			ratings: val,
+            distance: '2'
 		},
 		{
 			title:'Bathroom 2',
@@ -46,4 +52,12 @@ angular.module('portalApp')
 		$scope.detailsItem = item;		
 		$scope.portalHelpers.showView('bathMapsMap.html', 2);
 	};
+    
+    // This function is called when the user submits a bathroom rating
+    $scope.submitRating = function(title) {
+     	$scope.portalHelpers.invokeServerFunction('addRating', {
+         	name: title,
+            value: $scope.rating.value});
+        alert('Thanks for submitting a rating!');
+    };
 }]);
