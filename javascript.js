@@ -35,9 +35,9 @@ angular.module('portalApp')
 	$scope.portalHelpers.showView('bathMapsMain.html', 1);
 	
 	// This function gets called when user clicks an item in the list
-	$scope.showDetails = function(item){
+	$scope.showMap = function(item){
 		// Make the item that user clicked available to the template
 		$scope.detailsItem = item;		
-		$scope.portalHelpers.showView('bathMapsDetails.html', 2);
+		$scope.portalHelpers.showView('bathMapsMap.html', 2);
 	};
 }]);
