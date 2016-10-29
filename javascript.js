@@ -14,7 +14,8 @@ angular.module('portalApp')
 		{
 			title:'Bathroom 1',
 			ratings: 'x',
-            distance: '20'
+            distance: '20',
+            map: 'https://uwaterloo.ca/map/api/indoor-maps/tiles/53929e7ba0d4c646102d3004/10/0_1.png'
 		},
 		{
 			title:'Bathroom 2',
@@ -43,6 +44,9 @@ angular.module('portalApp')
 		}
 	]};
     
+     		
+        
+   
     $scope.ready = true;
 	
 	// Show main view in the first column as soon as controller loads
