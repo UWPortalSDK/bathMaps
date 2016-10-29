@@ -1,26 +1,27 @@
 <!-- Primary template that will get shown when widget loads -->
 <script type="text/ng-template" id="bathMapsMain.html">
-    <h3> <b> Closest Bathrooms to You... </b> </h3>
+    <h3 class="leftpad"> <b> Closest Bathrooms to You... </b> </h3>
     <widget-list list="item in items track by item.title" render="ready">
         <div class="container">
         <div class="item item-icon-right item-text-wrap">
             <b ng-bind-html="::item.title"></b>
             <p>
-                <b>Ratings:</b> {{::item.ratings}}
+                <b>Ratings:</b> {{::item.ratings}}/5
                 <br/>
             </p>
             <p>
-                <b>Distance:</b> {{::item.distance}}
+                <b>Distance:</b> {{::item.distance}}m
                 <br/>
             </p>
             </div>
-            <widget-row clickable ng-click="showMap(item)">
-            <widget-cell> Go! </widget-cell>
-                        <widget-cell>
-                            <widget-icon name="angle-right"></widget-icon>
-                        </widget-cell>
-            <i class="icon ion-chevron-right"></i>
-        </widget-row>
+            <div clickable ng-click="showMap(item)" align = "right">
+                <p>
+                    <h6 class ="padd"> Go!
+                    <i class="icon ion-man"></i>
+                    <i class="icon ion-woman"></i>
+                        </h6>
+                </p>
+        </div>
         </div>
     </widget-list>
 </script>
