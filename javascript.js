@@ -13,33 +13,33 @@ angular.module('portalApp')
 	$scope.items = {value: [
 		{
 			title:'Bathroom 1',
-			ratings: 'random',
-            distance: '2'
+			ratings: 'x',
+            distance: '20'
 		},
 		{
 			title:'Bathroom 2',
-			ratings: '4.7',
-            distance: '15'
+			ratings: 'x',
+            distance: '40'
 		},
 		{
 			title:'Bathroom 3',
-			ratings: '2',
-            distance: '15'
+			ratings: 'x',
+            distance: '70'
 		},
 		{
 			title:'Bathroom 4',
-			ratings: '3.6',
-            distance: '15'
+			ratings: 'x',
+            distance: '80'
 		},
 		{
 			title:'Bathroom 5',
-			ratings: 'No ratings yet',
-            distance: '14'
+			ratings: 'x',
+            distance: '100'
 		},
 		{
 			title:'Bathroom 6',
-			ratings: 'No ratings yet',
-            distance: '15'
+			ratings: 'x',
+            distance: '115'
 		}
 	]};
     
