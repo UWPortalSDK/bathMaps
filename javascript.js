@@ -34,6 +34,8 @@ angular.module('portalApp')
 			details: 'Curabitur scelerisque lorem risus, in luctus orci hendrerit non. Praesent quis tellus dapibus dolor consectetur volutpat.'
 		}
 	];
+    
+    $scope.ready = true;
 	
 	// Show main view in the first column as soon as controller loads
 	$scope.portalHelpers.showView('bathMapsMain.html', 1);
@@ -43,5 +45,5 @@ angular.module('portalApp')
 		// Make the item that user clicked available to the template
 		$scope.detailsItem = item;		
 		$scope.portalHelpers.showView('bathMapsDetails.html', 2);
-	}
+	};
 }]);
