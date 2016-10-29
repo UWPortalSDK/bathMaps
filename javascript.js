@@ -6,31 +6,32 @@ angular.module('portalApp')
 		{
 			title:'Bathroom 1',
 			ratings: '3.5',
-            distance: '15m'
+            distance: '15'
 		},
 		{
 			title:'Bathroom 2',
 			ratings: '4.7',
-            distance: '15m'
+            distance: '15'
 		},
 		{
 			title:'Bathroom 3',
 			ratings: '2',
-            distance: '15m'
+            distance: '15'
 		},
 		{
 			title:'Bathroom 4',
 			ratings: '3.6',
-            distance: '15m'
+            distance: '15'
 		},
 		{
 			title:'Bathroom 5',
 			ratings: 'No ratings yet'
+            distance: '14'
 		},
 		{
 			title:'Bathroom 6',
 			ratings: 'No ratings yet',
-            distance: '15m'
+            distance: '15'
 		}
 	];
     

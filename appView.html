@@ -6,17 +6,17 @@
         <div class="item item-icon-right item-text-wrap">
             <b ng-bind-html="::item.title"></b>
             <p>
-                <b>Ratings:</b> {{::item.ratings}}
+                <b>Ratings:</b> {{::item.ratings}}/5
                 <br/>
             </p>
             <p>
-                <b>Distance:</b> {{::item.distance}}
+                <b>Distance:</b> {{::item.distance}}m
                 <br/>
             </p>
             </div>
             <div clickable ng-click="showMap(item)" align = "right">
                 <p>
-                    <h6 class ="padd"> Go! 
+                    <h6 class ="padd"> Go!
                     <i class="icon ion-man"></i>
                     <i class="icon ion-woman"></i>
                         </h6>
