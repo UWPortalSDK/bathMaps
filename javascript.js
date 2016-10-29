@@ -5,13 +5,15 @@ angular.module('portalApp')
      	value: '5'   
     };
     
-    var val = $scope.portalHelpers.invokeServerFunction('getAvg', {name: 'Bathroom 1'});
+    $scope.portalHelpers.invokeServerFunction('getAvg', {name: 'Bathroom 1'}).then(function(value) {
+        $scope.items.value[0].ratings = value;
+    });
     
 	// mock data
-	$scope.items = [
+	$scope.items = {value: [
 		{
 			title:'Bathroom 1',
-			ratings: val,
+			ratings: 'random',
             distance: '2'
 		},
 		{
@@ -39,7 +41,7 @@ angular.module('portalApp')
 			ratings: 'No ratings yet',
             distance: '15'
 		}
-	];
+	]};
     
     $scope.ready = true;
 	
@@ -57,7 +59,9 @@ angular.module('portalApp')
     $scope.submitRating = function(title) {
      	$scope.portalHelpers.invokeServerFunction('addRating', {
          	name: title,
-            value: $scope.rating.value});
+            value: $scope.rating.value}).then(function(new_rating) {
+            $scope.items.value[0].ratings = new_rating;
+        });
         alert('Thanks for submitting a rating!');
         $scope.portalHelpers.showView('bathMapsMain.html', 1);
     };
