@@ -59,5 +59,6 @@ angular.module('portalApp')
          	name: title,
             value: $scope.rating.value});
         alert('Thanks for submitting a rating!');
+        $scope.portalHelpers.showView('bathMapsMain.html', 1);
     };
 }]);
