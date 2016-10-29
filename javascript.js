@@ -4,34 +4,28 @@ angular.module('portalApp')
 	// mock data
 	$scope.items = [
 		{
-			title:'Item 1',
-			tags: ['tag A', 'tag B', 'tag C'],
-			details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+			title:'Bathroom 1',
+			ratings: '3.5'
 		},
 		{
-			title:'Item 2',
-			tags: ['tag D', 'tag E', 'tag F'],
-			details: 'Mauris cursus, sapien et malesuada ultrices, purus sapien iaculis tellus, quis semper magna est at leo.'
+			title:'Poopstation 2.0',
+			ratings: '4.7'
 		},
 		{
-			title:'Item 3',
-			tags: ['tag A', 'tag H'],
-			details: 'Donec id quam eu odio feugiat sagittis. Duis a tempus neque. Praesent elementum quis ante quis commodo. Sed tincidunt aliquet dolor sit amet laoreet. '
+			title:'Flush ya lil nasty',
+			ratings: '2'
 		},
 		{
-			title:'Item 4',
-			tags: ['tag I'],
-			details: 'Proin sem quam, rutrum id ante id, scelerisque tempor quam. Curabitur pharetra turpis at sem placerat, non vehicula ligula tincidunt.'
+			title:'piss bowl',
+			ratings: '3.6'
 		},
 		{
-			title:'Item 5',
-			tags: ['tag C', 'tag K', 'tag B'],
-			details: 'Mauris nec ultricies metus. Cras et dictum justo. Nam a ullamcorper dolor. Cras fringilla metus vel facilisis vehicula.'
+			title:'pisscity',
+			ratings: 'DNE'
 		},
 		{
-			title:'Item 6',
-			tags: ['tag A', 'tag B', 'tag C'],
-			details: 'Curabitur scelerisque lorem risus, in luctus orci hendrerit non. Praesent quis tellus dapibus dolor consectetur volutpat.'
+			title:'wash yo hands',
+			ratings: 'N/A'
 		}
 	];
     
