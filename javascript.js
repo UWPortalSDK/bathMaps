@@ -25,7 +25,7 @@ angular.module('portalApp')
 		},
 		{
 			title:'Bathroom 5',
-			ratings: 'No ratings yet'
+			ratings: 'No ratings yet',
             distance: '14'
 		},
 		{
