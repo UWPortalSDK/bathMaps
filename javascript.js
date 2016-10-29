@@ -5,19 +5,23 @@ angular.module('portalApp')
 	$scope.items = [
 		{
 			title:'Bathroom 1',
-			ratings: '3.5'
+			ratings: '3.5',
+            distance: '15m'
 		},
 		{
 			title:'Bathroom 2',
-			ratings: '4.7'
+			ratings: '4.7',
+            distance: '15m'
 		},
 		{
 			title:'Bathroom 3',
-			ratings: '2'
+			ratings: '2',
+            distance: '15m'
 		},
 		{
 			title:'Bathroom 4',
-			ratings: '3.6'
+			ratings: '3.6',
+            distance: '15m'
 		},
 		{
 			title:'Bathroom 5',
@@ -25,7 +29,8 @@ angular.module('portalApp')
 		},
 		{
 			title:'Bathroom 6',
-			ratings: 'No ratings yet'
+			ratings: 'No ratings yet',
+            distance: '15m'
 		}
 	];
     
