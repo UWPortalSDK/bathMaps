@@ -3,25 +3,25 @@
     <h3 class="leftpad"> <b> Closest Bathrooms to You... </b> </h3>
     <widget-list list="item in items track by item.title" render="ready">
         <div class="container">
-        <div class="item item-icon-right item-text-wrap">
-            <b ng-bind-html="::item.title"></b>
-            <p>
-                <b>Ratings:</b> {{::item.ratings}}/5
-                <br/>
-            </p>
-            <p>
-                <b>Distance:</b> {{::item.distance}}m
-                <br/>
-            </p>
-            </div>
-            <div clickable ng-click="showMap(item)" align = "right">
+            <div class="item item-icon-right item-text-wrap">
+                <b ng-bind-html="::item.title"></b>
                 <p>
-                    <h6 class ="padd"> Go!
+                    <b>Ratings:</b> {{::item.ratings}}/5
+                    <br/>
+                </p>
+                <p>
+                    <b>Distance:</b> {{::item.distance}}m
+                    <br/>
+                </p>
+            </div>
+            <div clickable ng-click="showMap(item)" align="right">
+                <p>
+                    <h6 class="padd"> Go!
                     <i class="icon ion-man"></i>
                     <i class="icon ion-woman"></i>
                         </h6>
                 </p>
-        </div>
+            </div>
         </div>
     </widget-list>
 </script>
@@ -31,7 +31,8 @@
     <!-- 'wr' and 'wc' are short for 'widget-row' and 'widget-cell' -->
     <wr>
         <wc>
-            <h2>{{detailsItem.title}}</h2></wc>
+            <h2>{{detailsItem.title}}</h2>
+        </wc>
     </wr>
     <wr>
         <wc><span ng-repeat="tag in detailsItem.tags" class="label label-success">{{tag}}</span></wc>
