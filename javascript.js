@@ -8,24 +8,24 @@ angular.module('portalApp')
 			ratings: '3.5'
 		},
 		{
-			title:'Poopstation 2.0',
+			title:'Bathroom 2',
 			ratings: '4.7'
 		},
 		{
-			title:'Flush ya lil nasty',
+			title:'Bathroom 3',
 			ratings: '2'
 		},
 		{
-			title:'piss bowl',
+			title:'Bathroom 4',
 			ratings: '3.6'
 		},
 		{
-			title:'pisscity',
-			ratings: 'DNE'
+			title:'Bathroom 5',
+			ratings: 'No ratings yet'
 		},
 		{
-			title:'wash yo hands',
-			ratings: 'N/A'
+			title:'Bathroom 6',
+			ratings: 'No ratings yet'
 		}
 	];
     
