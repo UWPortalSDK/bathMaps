@@ -33,7 +33,18 @@
         <wc>
             <h2>{{detailsItem.title}}</h2>
         </wc>
-    </wr>
+        <wc>
+            <h5>Please rate your bathroom experience:</h5>
+            <form action="">
+  <input type="radio" name="rating" value="1"> 1 &nbsp;
+  <input type="radio" name="rating" value="2"> 2 &nbsp;     
+  <input type="radio" name="rating" value="3"> 3 &nbsp;     
+  <input type="radio" name="gender" value="4"> 4 &nbsp;    
+  <input type="radio" name="gender" value="5"> 5 &nbsp;    
+  <br> <br> <input type="submit" value="Submit">
+      </form>
+      </wc>
+      
     <wr>
         <wc><span ng-repeat="tag in detailsItem.tags" class="label label-success">{{tag}}</span></wc>
     </wr>
