@@ -1,5 +1,6 @@
 <!-- Primary template that will get shown when widget loads -->
 <script type="text/ng-template" id="bathMapsMain.html">
+    <h3> <b> Closest Bathrooms to You... </b> </h3>
     <widget-list list="item in items track by item.title" render="ready">
         <div class="item item-icon-right item-text-wrap">
             <b ng-bind-html="::item.title"></b>
